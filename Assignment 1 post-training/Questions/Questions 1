@@ -1,1 +1,83 @@
 Questions 1
+
+What have you done in previous projects? 
+In the last project I did an application for MTV that have new features like multimedia material and streaming video. Also new implementation of permissions model for Android 6 and material design.
+In TED I developed an application that allows to the assistance to get more details about conferences and about the place.
+In JRT Studio I developed an app that allow to users have a music and video player very intuitive. 
+Any app from scratch? 
+In personal projects I have some apps that are from scratch, I have worked in an app to do reminders adding voice notes and a second app that have animals streaming from zoos.
+How often did you build? 
+I have worked in different projects  between  6 and 12 months.
+How often did you publish? 
+I have worked in 6 apps that are published like MTV, TED, forger, Rocket, Player, Possible and Imaginaria. so every project have been published in one year approximate. 
+How often did you have the SCRUM meetings? 
+Is common to have a daily scrum for 15 minutes just to have an update and have better communication  and control of the projects.
+Have you used flavors? 
+yes, flavours help you to build variant in a project, just have to set the rules and configure  the build types and product of flavours in the gradle. For example you can use it to build a demo Debug version of your app.
+What is a memory heap? 
+is the portion of memory where dynamically allocated memory resides. Memory allocated from the heap will remain allocated until  the memory is free or the program terminates.If all references to allocated memory are lost you have a memory leak.
+What is a heap talking about data structures? 
+a heap is a specialized tree-based data structure that satisfies the heap property. If A is a parent node of B then the key  of node A is ordered with respect to the key of node B with the same ordering applying across the heap. A heap can be classified further as either a max heap or a min heap. 
+What about a binary tree? 
+A binary tree is made of nodes, where each node contains a left pointer, a right pointer, and a data element. The root pointer points to the topmost node in the tree. The left and right pointers recursively point to smaller "subtrees" on either side. A null pointer represents a binary tree with no elements.
+Could you give me some example of a binary search tree? 
+To be a binary search tree, for every node, all of the nodes in its left tree must be less  or equals than  the node, and all of the nodes in its right subtree must be high the node. so if you search a higher number you always search to the right
+What is the proxy pattern? 
+proxy, in its most general form, is a class functioning as an interface to something else. The proxy could interface to anything: a network connection, a large object in memory, a file, or some other resource that is expensive or impossible to duplicate. In short, a proxy is a wrapper or agent object that is being called by the client to access the real serving object behind the scenes. Use of the proxy can simply be forwarding to the real object, or can provide additional logic. 
+Is the proxy pattern used in Retrofit? 
+Proxy Pattern is a basic concept to understand the principle of Retrofit Framework.
+Proxy Pattern creates object having original object to interface its functionality to outer world.
+
+For example When we  are going to create an Image interface and concrete classes implementing the Image interface. ProxyImage is a a proxy class to reduce memory footprint of RealImage object loading.
+
+ProxyPatternDemo, our demo class, will use ProxyImage to get an Image object to load and display as it needs.
+
+When do we prefer to use the builder pattern? 
+The Builder pattern is very useful to factorize code. 
+
+Itseparate the construction of a complex object from its representation so that the same construction process can create different representations
+
+Its aim has changed through time and it’s most of the time used to avoid creating a lot of constructors that differs only by the number of arguments. 
+
+What are the disadvantages of the builder pattern? 
+the size of the code increase
+loss of static analysis
+for missing mandatory parameters an exception needs to be thrown and catched somethere
+if you use boxed types in builders to represent primitive values which are not set yet, then there is a lot of auto-boxing/unboxing going on - which allows for NullPointerExceptions which are hard to spot. No such problem in telescope constructors - you can just pass primitive values.
+
+What is an idling resource in Espresso? 
+Represents a resource of an application under test which can cause asynchronous background work to happen during test execution. By default, Espresso synchronizes all view operations with the UI thread as well as AsyncTasks; however, it has no way of doing so with "hand-made" resources. In such cases, test authors can register the custom resource and Espresso will wait for the resource to become idle prior to executing a view operation. 
+Have you used Jenkins? 
+Jenkins is a cross-platform, continuous integration and continuous delivery application that helps to build and test your software projects continuously making it easier to integrate changes to the project and to obtain a new build. 
+Did you use Dagger 1 or Dagger 2? 
+I have experience with both but  the advantages of Dagger 2 are
+
+No more reflection
+Traceable 
+Supports method injection in addition to field and constructor injection which were the only two types supported by Dagger 1
+Modules require less configuration than Dagger 1
+Allows users to use any well-formed scope annotation. Dagger 1 only supported a single scope: @Singleton.
+
+When would you use MVC or MVP? 
+The two patterns are similar in that they both are concerned with separating concerns and they both contain Models and Views. Many consider the MVP pattern to simply be a variant of the MVC pattern. The key difference is in how handles the user input. With MVC, it’s always the controller’s responsibility to handle mouse and keyboard events. With MVP, GUI components themselves initially handle the user’s input, but delegate to the interpretation of that input to the presenter. 
+
+What is new in Android N? 
+Multiwindow
+Direct reply notifications and bundle notification
+Improve doze mode
+new features of java 8
+Vulkan graphics APIs
+
+Have you heard about Reactive Programming? 
+is a programming paradigm oriented around data flows and the propagation of change. This means that it should be possible to express static or dynamic data flows with ease in the programming languages used, and that the underlying execution model will automatically propagate changes through the data flow.
+
+
+What format did you use for video streaming? 
+native android media player, jw player and exo player
+What is DASH? 
+is an adaptive bitrate streaming technique that enables high quality streaming of media content over the Internet delivered from conventional HTTP web servers.
+How did you use it? 
+we can use it for web streaming and application streaming because it make possible a media distribution that generates segments that contains different encoded versions of one or several of media components of the content.
+Did you use ExoPlayer?
+ExoPlayer supports features not currently provided by MediaPlayer, including Dynamic adaptive streaming over HTTP (DASH), SmoothStreaming and Common Encryption. It's designed to be easy to customize and extend, allowing many components to be replaced with custom implementations. Because ExoPlayer is a library that you include in your application, it can be easily updated along with your app.
+
