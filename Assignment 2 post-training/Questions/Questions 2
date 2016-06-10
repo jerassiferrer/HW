@@ -1,0 +1,73 @@
+Questions 2
+How do you create a Singleton instance? 
+You need to create a singleobject class with its constructor as private and have a static instance of itself. This class provides a static method to get its static instance to outside world. 
+How do you make your Singleton thread safe? 
+To have a thread sage singleton when you instance it you have  to created it at class-load time. Any subsequent calls to the getInstance() method will return the already created instance. 
+How do you make it Singleton thread safe with volatile? 
+Volatile just guarantees that if one thread updates the reference, all other threads will see the new reference, not some cached reference. This is slower, but safer.
+What is a HashMap? 
+Basically, a HashMap allows you to store items with identifiers. They are stored in a table format with the identifier being hashed using a hashing algorithm. Typically they are more efficient to retrieve items than search trees and others structures.
+What happens if I try to insert a key-value pair that already exists? 
+replaces the previous value associated with the given key in the map. The map simply drops its reference to the value. If nothing else holds a reference to the object, that object becomes eligible for garbage collection. Additionally, Java returns any previous value associated with the given key
+What’s the difference between ArrayList and LinkedList? 
+arraylist is faster than linked list
+linked list remove and insert operation give a performance of O1 vs linkedlistON
+Memory consumption is high in linked list
+
+What is the targetSDK? 
+he version your application was targeted to run on. Ideally this is because of some sort of optimal run conditions. If you were to "make your app for version 19" this is where that would be specified. It may run on earlier or later releases, but this is what you were aiming for. This is mostly to indicate how current your application is for use in the marketplace
+What is an APK? 
+Android application package (APK) is the package file format used by the Android operating system for distribution and installation of mobile apps and middleware.
+Can I reverse engineering an APK? 
+Yes if it is not obfuscated you can do reverse with a tool like apkotool and others.
+What is the APK signing? 
+digitally signed with a certificate before they can be installed
+If I want to install an application with the same id but different signings, what would happen? 
+It will be two different ask installed 
+In base of what would you buy testing physical devices? (API, Manufacturer, screen sizes). 
+I will focused in my user base top devises and screen size.
+What are the main lifecycle callbacks? 
+There are several callback methods that an activity might receive, due to a change in its state—whether the system is creating it, stopping it, resuming it, or destroying it—and each callback provides you the opportunity to perform specific work that's appropriate to that state change. For instance, when stopped, your activity should release any large objects, such as network or database 
+In which callback would you free your references? 
+Ondestroy
+Have you heard about the isFinishing() method? 
+Check to see whether this activity is in the process of finishing, either because you called finish() on it or someone else has requested that it finished.
+Are you comfortable with the testing frameworks? 
+yes I have experience using mockito, espresso, roboelectric and others.
+How would I test a login screen with Espresso? 
+using Screen Object Pattern 
+Create the variable that will contain the instance of our Screen Object class
+Create our instance of Login Screen and any other screen object we might require.
+How does the testing behind the scenes work with Espresso? 
+the onView method takes a hamcrest matcher that is expected to match one
+perform an action on the view
+create test class
+verify results
+How can I create a splash screen in Android that only gets shown when the user enters the application for the first time? 
+You can use the SharedPreferences to identify if it is the "First time" the app is launched. Just use a Boolean variable "my_first_time” and change its value to false when your task for "first time" is over.
+What is an intent? 
+is a messaging object you can use to request an action from another app component. Although intents facilitate communication between components in several ways, there are three fundamental use-cases: activities, services or broadcast
+Let’s say that I want to start another application through an intent? Are there any security concerns with it? 
+with an implicit intent the you can force a chooser to respond to the intent and the user select the app to use.
+To advertise which intents can receive you can declare one or more intentes filters.
+How can I go back to the main thread inside a background thread? 
+using the handler.callback an handle message  and it need application context and service context.
+Now, let’s say I want to show the same splash screen everytime the user updates the app? 
+You can use the SharedPreferences to identify if it is different version as it first time.
+
+Finally, I want to show it everytime I install the same APK gets installed, let’s assume the shared preferences don’t get cleared. Can you give me an example of where you’ve used a custom behavior for coordinator layout? 
+
+to make floating action button will move out of the way when the snack bar pops in.
+Have you created something where the action button or ToolBar does what it does in relation to the coordinator layout? 
+floating action button will move out of the way when the snack bar pops in.
+
+I’m getting at basically, those behaviors come with the design support library – have you actually created a custom behavior? 
+yes specify a behaviour that defines how view interacts with others views 
+defined with an annotation on the class declaration.
+
+Let’s say I put my app in the background, what’s the last lifecycle method that will be called? 
+on paused on resume
+
+What happens later on and the system needs to kick it out of memory if the app is still in the background
+It will be force to stopped and to destroyed
+

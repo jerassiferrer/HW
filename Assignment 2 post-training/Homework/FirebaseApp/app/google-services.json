@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "1048371416344",
+    "firebase_url": "https://myapp-f4338.firebaseio.com",
+    "project_id": "myapp-f4338",
+    "storage_bucket": "myapp-f4338.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1048371416344:android:b7135dc5cafa3c3d",
+        "android_client_info": {
+          "package_name": "com.mobileapps.jera.firebaseapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1048371416344-fqufh88f1q3l75df1t13as6vi1msdb60.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBM8Vci5Vec_49uEbroBg2jSIEWm_QoFUs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
